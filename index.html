@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每天竞赛官网入口-每日赛事报名导航与时间表</title>
+<meta name="description" content="每天竞赛官网入口汇总每日可报名的学科、编程、设计与体育赛事，提供报名时间、参赛资格、奖项设置与直达通道，帮你按日程挑赛事、避开重复报名和截止踩点。">
+<meta name="keywords" content="每天 竞赛 官网 入口">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3a6e'/%3E%3Cpath d='M18 40l9-16 9 16' stroke='%23ffd166' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='45' cy='20' r='6' fill='%23ff6b6b'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"每天竞赛官网入口","description":"汇总每日可报名竞赛的官网入口、时间表与参赛规则。","inLanguage":"zh-CN"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"每天竞赛在哪个官网入口报名？","acceptedAnswer":{"@type":"Answer","text":"报名以赛事主办方官网为准，例如全国青少年信息学奥林匹克竞赛在其官方报名系统提交，数学联赛通过省级赛区通知的入口注册，导航页只提供核对后的直达链接。"}},
+{"@type":"Question","name":"同一天报三场竞赛会冲突吗？","acceptedAnswer":{"@type":"Answer","text":"要看场次时段：线上编程赛多在19:00—21:00，线下学科联赛通常上午9:00开考。2026年11月的排期中，11月14日同时有蓝桥杯初赛与物理联赛复赛，两者间隔不足两小时，建议只报一场。"}},
+{"@type":"Question","name":"报名信息填错了还能改吗？","acceptedAnswer":{"@type":"Answer","text":"多数平台在截止前允许自行修改，姓名、证件号这类关键字段需要联系赛务邮箱。信息学奥赛报名系统在2026-11-05起关闭自助改名的入口，改名须走学校管理员通道。"}},
+{"@type":"Question","name":"竞赛证书对升学有用吗？","acceptedAnswer":{"@type":"Answer","text":"省级以上学科竞赛奖项在综合评价招生中有参考价值，具体看目标高校当年简章。白名单赛事名单每年由教育部门发布，2026年名单与2025年相比删减了3项语言类比赛。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#1b2432;--ink-2:#45526b;--line:#dfe4ee;--bg:#f6f7fb;--card:#ffffff;
+  --primary:#1f3a6e;--primary-2:#2f55a4;--accent:#e8552f;--gold:#c9971c;
+  --ok:#1c7a55;--radius:14px;--radius-s:9px;
+  --sh:0 2px 6px rgba(27,36,50,.06),0 10px 26px rgba(27,36,50,.06);
+  --fs-1:clamp(1.6rem,2.6vw,2.15rem);--fs-2:clamp(1.15rem,1.7vw,1.4rem);
+  --fs-3:1.02rem;--fs-body:.955rem;--fs-s:.845rem;
+  --gap:clamp(14px,2vw,24px);
+  --anchor:132px;
+  --sans:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg);font-size:var(--fs-body);line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--primary-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0 0 .5em;line-height:1.35;font-weight:700;letter-spacing:.01em}
+h1{font-size:var(--fs-1)}
+h2{font-size:var(--fs-2)}
+h3{font-size:var(--fs-3)}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.2em}
+li{margin-bottom:.35em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+section[id],div[id]{scroll-margin-top:var(--anchor)}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:8px;top:8px;background:#fff;padding:8px 14px;z-index:99;border-radius:8px}
+
+/* 吸顶组 */
+.sticky-group{position:sticky;top:0;z-index:50}
+.notice{background:linear-gradient(90deg,#152a52,#1f3a6e 60%,#2b4d92);color:#e8eefb;font-size:var(--fs-s);padding:7px 0}
+.notice .wrap{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center}
+.notice b{color:#ffd166;font-weight:600}
+.notice .dot{width:6px;height:6px;border-radius:50%;background:#ffd166;flex:none}
+.notice a{color:#cfe0ff;text-decoration:underline;text-underline-offset:3px}
+header.site{background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(27,36,50,.05)}
+.headbar{display:flex;align-items:center;gap:14px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:9px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .bt{display:flex;flex-direction:column;line-height:1.15}
+.brand .bt strong{font-size:1.02rem;color:var(--primary);letter-spacing:.02em}
+.brand .bt span{font-size:.68rem;color:var(--ink-2);letter-spacing:.16em}
+.nav{display:flex;flex-wrap:wrap;gap:4px 2px;margin-left:auto}
+.nav a{font-size:.88rem;color:var(--ink-2);padding:7px 9px;border-radius:8px;text-decoration:none;white-space:nowrap}
+.nav a:hover{background:#eef2fb;color:var(--primary)}
+.nav a.on{background:var(--primary);color:#fff}
+.tools{display:flex;align-items:center;gap:8px;margin-left:6px}
+.search{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 4px 3px 12px}
+.search input{border:0;outline:none;font:inherit;font-size:.86rem;width:130px;background:transparent;color:var(--ink)}
+.search button{border:0;background:var(--primary);color:#fff;border-radius:999px;padding:5px 12px;font:inherit;font-size:.82rem;cursor:pointer}
+.search button:hover{background:var(--primary-2)}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:9px;padding:7px 10px;font:inherit;font-size:.86rem;cursor:pointer;color:var(--primary)}
+.searchmsg{font-size:.8rem;color:var(--accent);padding:2px 0 8px;display:none}
+.searchmsg.show{display:block}
+
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:radial-gradient(120% 130% at 88% 0%,#dfe8fb 0,#f6f7fb 55%,#f6f7fb 100%);padding:clamp(26px,4vw,48px) 0 clamp(24px,3.4vw,40px);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(18px,3vw,44px);align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.1em;color:var(--primary-2);background:#e7eefc;border:1px solid #cfdcf7;border-radius:999px;padding:4px 12px;margin-bottom:14px}
+.hero p.lead{font-size:1.03rem;color:var(--ink-2);max-width:44em}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 18px}
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;font-size:.92rem;font-weight:600;text-decoration:none;transition:transform .16s ease,background .16s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-p{background:var(--primary);color:#fff}
+.btn-p:hover{background:var(--primary-2)}
+.btn-g{border:1px solid var(--primary);color:var(--primary);background:#fff}
+.btn-g:hover{background:#eef2fb}
+.hero-stats{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:.84rem;color:var(--ink-2)}
+.hero-stats b{display:block;font-size:1.32rem;color:var(--primary);line-height:1.2}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 16px 30px rgba(31,58,110,.16))}
+.float-tag{position:absolute;background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:.76rem;box-shadow:var(--sh);color:var(--ink-2)}
+.float-tag.t1{top:6%;left:-2%}
+.float-tag.t2{bottom:12%;right:0}
+.float-tag.t3{bottom:-2%;left:8%}
+
+/* 布局 */
+.main{padding:clamp(24px,3.4vw,44px) 0 56px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 286px;gap:clamp(18px,2.6vw,34px);align-items:start}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--sh);padding:clamp(16px,2.2vw,26px);margin-bottom:var(--gap)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:14px}
+.sec-head h2{margin:0}
+.sec-head .hint{font-size:.8rem;color:var(--ink-2)}
+.sec-head .more{margin-left:auto;font-size:.84rem}
+
+/* 分类网格 */
+.grid-cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:10px}
+.cat{border:1px solid var(--line);border-radius:var(--radius-s);padding:10px 12px;background:#fbfcfe;transition:border-color .16s,transform .16s}
+.cat:hover{border-color:#b9c9ea;transform:translateY(-2px)}
+.cat strong{display:block;font-size:.92rem;color:var(--primary)}
+.cat span{font-size:.76rem;color:var(--ink-2)}
+
+/* 精选卡片 */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.card img{width:100%;height:132px;object-fit:cover}
+.card .cb{padding:11px 13px 13px;display:flex;flex-direction:column;gap:5px}
+.card h3{font-size:.96rem;margin:0}
+.card p{font-size:.83rem;color:var(--ink-2);margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:.75rem;color:#6b7893}
+.pill{display:inline-block;font-size:.72rem;padding:1px 8px;border-radius:999px;background:#eef2fb;color:var(--primary-2);border:1px solid #dbe5f7}
+.pill.hot{background:#fdece7;color:#b43a1c;border-color:#f6d2c6}
+.pill.ok{background:#e7f5ee;color:var(--ok);border-color:#c8e9d9}
+
+/* 列表 */
+ul.tight{list-style:none;padding:0;margin:0}
+ul.tight li{border-bottom:1px dashed var(--line);padding:9px 0;display:flex;gap:10px;align-items:baseline;font-size:.9rem}
+ul.tight li:last-child{border-bottom:0}
+ul.tight time{font-size:.78rem;color:#7b879f;flex:none;font-variant-numeric:tabular-nums}
+ul.tight .t{flex:1;min-width:0}
+
+/* 更新流时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid #dbe4f6}
+.timeline li{position:relative;padding:0 0 16px 6px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-25px;top:7px;width:9px;height:9px;border-radius:50%;background:#fff;border:2px solid var(--primary-2)}
+.timeline .d{font-size:.76rem;color:var(--primary-2);font-weight:600;letter-spacing:.02em}
+.timeline p{margin:2px 0 0;font-size:.88rem;color:var(--ink-2)}
+
+/* 深度解析 */
+.deep{background:#fff}
+.deep h3{margin-top:20px;padding-left:10px;border-left:3px solid var(--accent);font-size:1.02rem}
+.deep h3:first-of-type{margin-top:0}
+.quote{border-left:4px solid var(--gold);background:#fffdf4;padding:12px 16px;border-radius:0 var(--radius-s) var(--radius-s) 0;margin:14px 0;font-size:.92rem;color:#4b4225}
+.quote cite{display:block;font-style:normal;font-size:.78rem;color:#8a7b47;margin-top:6px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.cmp{border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 14px;font-size:.86rem;background:#fbfcfe}
+.cmp h4{margin:0 0 6px;font-size:.86rem;color:var(--primary)}
+.cmp.b{background:#fdf6f3;border-color:#f3d9cf}
+.cmp.b h4{color:#b43a1c}
+.factcheck{list-style:none;padding:0;margin:12px 0;border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden}
+.factcheck li{display:grid;grid-template-columns:86px 1fr;gap:10px;padding:9px 12px;font-size:.85rem;border-bottom:1px solid var(--line);margin:0}
+.factcheck li:last-child{border-bottom:0}
+.factcheck b{font-size:.76rem;color:var(--ink-2);letter-spacing:.04em;padding-top:2px}
+.factcheck .ft{color:var(--ok)}
+.factcheck .fc{color:var(--accent)}
+.factcheck .fr{color:var(--primary-2)}
+
+/* 步骤 */
+.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:10px}
+.steps li{counter-increment:s;position:relative;padding:11px 14px 11px 46px;border:1px solid var(--line);border-radius:var(--radius-s);background:#fbfcfe;font-size:.88rem}
+.steps li::before{content:counter(s);position:absolute;left:12px;top:10px;width:24px;height:24px;border-radius:50%;background:var(--primary);color:#fff;font-size:.8rem;display:grid;place-items:center;font-weight:700}
+.steps b{color:var(--primary)}
+
+/* FAQ */
+details{border:1px solid var(--line);border-radius:var(--radius-s);padding:0;margin-bottom:8px;background:#fbfcfe}
+details[open]{background:#fff}
+summary{cursor:pointer;padding:11px 14px;font-weight:600;font-size:.9rem;list-style:none;display:flex;gap:8px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"›";color:var(--accent);font-size:1.1rem;transition:transform .18s;display:inline-block;transform:rotate(0)}
+details[open] summary::before{transform:rotate(90deg)}
+details .fa{padding:0 14px 13px;font-size:.87rem;color:var(--ink-2)}
+
+/* 评论 */
+.comments{display:grid;gap:10px}
+.cmt{border:1px solid var(--line);border-radius:var(--radius-s);padding:11px 13px;background:#fbfcfe}
+.cmt .who{display:flex;gap:8px;align-items:center;font-size:.8rem;color:var(--ink-2);margin-bottom:4px}
+.av{width:22px;height:22px;border-radius:50%;background:#dbe5f7;color:var(--primary);display:grid;place-items:center;font-size:.7rem;font-weight:700;flex:none}
+.cmt p{margin:0;font-size:.88rem}
+.cmt .ref{font-size:.76rem;color:var(--primary-2);margin-top:5px;display:block}
+
+/* 标签索引 */
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.82rem;background:#fff;color:var(--ink-2)}
+.tag:hover{border-color:#b9c9ea;color:var(--primary);text-decoration:none}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:r}
+.rank li{counter-increment:r;display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:.88rem}
+.rank li:last-child{border-bottom:0}
+.rank li::before{content:counter(r);width:24px;height:24px;border-radius:7px;background:#eef2fb;color:var(--primary);font-weight:700;font-size:.78rem;display:grid;place-items:center}
+.rank li:nth-child(-n+3)::before{background:var(--primary);color:#fff}
+.rank .sc{font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+
+/* 资讯 */
+.news{display:grid;gap:9px}
+.news article{border-left:3px solid #dbe4f6;padding-left:11px}
+.news article h3{font-size:.92rem;margin:0 0 2px}
+.news article p{margin:0;font-size:.82rem;color:var(--ink-2)}
+
+/* 侧栏 */
+.side{display:grid;gap:var(--gap);position:sticky;top:var(--anchor)}
+.side .panel{margin-bottom:0;padding:16px}
+.side h2{font-size:.94rem;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.side h2::before{content:"";width:4px;height:15px;background:var(--accent);border-radius:2px}
+.side ul{list-style:none;padding:0;margin:0;font-size:.85rem}
+.side ul li{padding:6px 0;border-bottom:1px dashed var(--line);margin:0}
+.side ul li:last-child{border-bottom:0}
+.side ul a{color:var(--ink-2);display:block;padding:1px 6px;border-radius:6px;border-left:2px solid transparent}
+.side ul a:hover,.side ul a.on{color:var(--primary);background:#eef2fb;border-left-color:var(--primary);text-decoration:none}
+.side .note{font-size:.78rem;color:var(--ink-2);background:#f2f5fc;border-radius:8px;padding:9px 11px}
+
+/* 回顶 */
+#toTop{position:fixed;right:16px;bottom:16px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;box-shadow:var(--sh);color:var(--primary);font-size:.72rem;font-weight:700;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:60}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{transform:translateY(-3px)}
+
+/* 页脚 */
+footer.site{background:#152a52;color:#c6d3ee;padding:clamp(26px,4vw,44px) 0 18px;font-size:.86rem}
+footer.site .fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:22px}
+footer.site h3{color:#fff;font-size:.92rem;margin-bottom:9px}
+footer.site a{color:#b9cbf0}
+footer.site a:hover{color:#fff}
+footer.site ul{list-style:none;padding:0;margin:0}
+footer.site li{padding:3px 0}
+footer.site .fbot{border-top:1px solid #2b4573;margin-top:22px;padding-top:14px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.78rem;color:#8fa5cc}
+footer.site .fbrand{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+footer.site .fbrand svg{width:34px;height:34px}
+footer.site .fbrand strong{color:#fff;font-size:1rem}
+footer.site .fpos{color:#a9bee6;font-size:.84rem;line-height:1.7}
+
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;grid-template-columns:1fr 1fr;order:2}
+  .main-col{order:1}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin-inline:auto}
+  footer.site .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--anchor:120px}
+  .nav{display:none;order:4;width:100%;margin:0 0 8px;padding-bottom:6px}
+  .nav.open{display:flex}
+  .menu-btn{display:inline-block}
+  .nav a{flex:1 1 46%}
+  .search input{width:100px}
+  .compare{grid-template-columns:1fr}
+  .side{grid-template-columns:1fr}
+  footer.site .fgrid{grid-template-columns:1fr}
+  .float-tag{display:none}
+  .factcheck li{grid-template-columns:1fr}
+}
+@media (max-width:400px){
+  .wrap{width:calc(100% - 22px)}
+  .headbar{gap:8px}
+  .brand .bt span{display:none}
+  .search input{width:70px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="sticky-group">
+  <div class="notice">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <b>每天竞赛官网入口</b>
+      <span>11月8日更新：信息学奥赛初赛成绩已开放查询，物理联赛复赛准考证打印截至11月12日12:00。</span>
+      <a href="#latest">查看时间表</a>
+    </div>
+  </div>
+  <header class="site">
+    <div class="wrap headbar">
+      <a class="brand" href="#top" aria-label="首页">
+        <svg viewBox="0 0 64 64" role="img" aria-label="竞赛场次图标"><rect width="64" height="64" rx="14" fill="#1f3a6e"/><path d="M18 42l9-17 9 17" stroke="#ffd166" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="45" cy="20" r="6" fill="#e8552f"/></svg>
+        <span class="bt"><strong>每天竞赛</strong><span>DAILY CONTEST HUB</span></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="nav" id="mainNav" aria-label="主题导航">
+        <a href="#overview">赛事概览</a>
+        <a href="#featured">精选赛事</a>
+        <a href="#latest">最新更新</a>
+        <a href="#channels">分类入口</a>
+        <a href="#deep">深度解析</a>
+        <a href="#guide">参赛指南</a>
+        <a href="#faq">常见问题</a>
+        <a href="#comments">用户评论</a>
+        <a href="#news">相关资讯</a>
+      </nav>
+      <div class="tools">
+        <div class="search">
+          <input id="q" type="search" placeholder="搜赛事/学科" aria-label="站内查找赛事或学科">
+          <button id="qBtn" type="button">查找</button>
+        </div>
+      </div>
+    </div>
+    <div class="wrap searchmsg" id="searchMsg" role="status"></div>
+  </header>
+</div>
+
+<div id="top"></div>
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">2026 赛季 · 第 45 周排期</span>
+      <h1 id="heroTitle">每天竞赛</h1>
+      <p class="lead">把散落在各省赛区、高校与平台官网的报名口收拢到一张日程表上：今天开报的是哪几场、周六上午的线下联赛几点检录、线上赛的提交系统什么时候关闸。挑赛事先看资格条款，再对时间，最后才点报名。</p>
+      <div class="hero-actions">
+        <a class="btn btn-p" href="#channels">按学科找入口</a>
+        <a class="btn btn-g" href="#latest">看11月8日更新</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>128</b>在招赛事</div>
+        <div><b>9</b>学科频道</div>
+        <div><b>11-08</b>今日同步</div>
+        <div><b>37</b>本周截止</div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 330" role="img">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f55a4"/><stop offset="1" stop-color="#152a52"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd166"/><stop offset="1" stop-color="#e8a92f"/></linearGradient>
+        </defs>
+        <rect x="24" y="26" width="372" height="278" rx="20" fill="url(#g1)"/>
+        <rect x="48" y="52" width="200" height="14" rx="7" fill="#7f9cd8" opacity=".8"/>
+        <rect x="48" y="76" width="120" height="9" rx="4.5" fill="#5f7fc4" opacity=".7"/>
+        <g fill="#20396b">
+          <rect x="48" y="104" width="96" height="70" rx="10"/>
+          <rect x="156" y="104" width="96" height="70" rx="10"/>
+          <rect x="264" y="104" width="96" height="70" rx="10"/>
+          <rect x="48" y="186" width="96" height="70" rx="10"/>
+          <rect x="156" y="186" width="96" height="70" rx="10"/>
+          <rect x="264" y="186" width="96" height="70" rx="10"/>
+        </g>
+        <rect x="156" y="186" width="96" height="70" rx="10" fill="url(#g2)"/>
+        <path d="M190 232l10-19 10 19" stroke="#152a52" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="214" cy="205" r="5" fill="#e8552f"/>
+        <g fill="#7f9cd8" opacity=".85">
+          <rect x="62" y="122" width="52" height="6" rx="3"/><rect x="62" y="136" width="34" height="6" rx="3"/>
+          <rect x="170" y="122" width="52" height="6" rx="3"/><rect x="170" y="136" width="30" height="6" rx="3"/>
+          <rect x="278" y="122" width="52" height="6" rx="3"/><rect x="278" y="136" width="40" height="6" rx="3"/>
+          <rect x="62" y="204" width="52" height="6" rx="3"/><rect x="62" y="218" width="28" height="6" rx="3"/>
+          <rect x="278" y="204" width="52" height="6" rx="3"/><rect x="278" y="218" width="36" height="6" rx="3"/>
+        </g>
+        <circle cx="352" cy="52" r="16" fill="none" stroke="#ffd166" stroke-width="4"/>
+        <path d="M352 38v10l7 5" stroke="#ffd166" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="float-tag t1">初赛成绩已出</span>
+      <span class="float-tag t2">复赛准考证 · 11-12 截止</span>
+      <span class="float-tag t3">今日 6 场线上赛</span>
+    </div>
+  </div>
+</section>
+
+<div class="main" id="main">
+  <div class="wrap layout">
+    <div class="main-col">
+
+      <section class="panel" id="overview" aria-labelledby="ovTitle">
+        <div class="sec-head">
+          <h2 id="ovTitle">本周可报赛事概览</h2>
+          <span class="hint">按报名截止日排序</span>
+        </div>
+        <p>2026年第45周正在招人的赛事集中在五类：信息学与算法、数学与物理学科联赛、青少年机器人、大学生创新创业、作文与英语演讲。报名周期从3天到21天不等，越接近截止，赛务方对证件照格式和学校盖章的要求越严格。以下四条是本周口径变化最明显的。</p>
+        <ul class="tight">
+          <li><time>11-09</time><span class="t">全国青少年信息学奥林匹克竞赛（CSP-J/S）成绩复核申请截止，需学校管理员在报名系统内提交，个人邮箱申请不受理。</span></li>
+          <li><time>11-10</time><span class="t">中国大学生计算机设计大赛校内选拔报名关闭，作品说明文档限30页，超出自动截断。</span></li>
+          <li><time>11-12</time><span class="t">全国中学生物理联赛复赛准考证打印关闭，12:00 后系统只保留查询不提供下载。</span></li>
+          <li><time>11-15</time><span class="t">全国青少年机器人技术等级考试冬季场次报名截止，四级以上需提交上一级证书编号。</span></li>
+        </ul>
+      </section>
+
+      <section class="panel" id="featured" aria-labelledby="ftTitle">
+        <div class="sec-head">
+          <h2 id="ftTitle">精选赛事推荐</h2>
+          <span class="hint">按赛道选，不按热度排</span>
+          <a class="more" href="#channels">全部分类</a>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <img src="https://picsum.photos/seed/contest-algo/560/300" width="560" height="300" loading="lazy" alt="学生在中小学机房调试算法题代码">
+            <div class="cb">
+              <h3>信息学奥赛冬令营选拔</h3>
+              <p>省级一等奖可报名，营内三次测试取最好一次，成绩前 15% 进入省队集训。</p>
+              <div class="meta"><span class="pill">报名至 11-20</span><span>线上机试</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/contest-robot/560/300" width="560" height="300" loading="lazy" alt="机器人在场地上沿黑线循迹，旁边放着工具箱">
+            <div class="cb">
+              <h3>青少年机器人循迹挑战赛</h3>
+              <p>限 8—15 岁，两轮取最快圈速，机器人长宽不得超 25 厘米，电机数量上限 4 个。</p>
+              <div class="meta"><span class="pill hot">本周截止</span><span>线下</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/contest-essay/560/300" width="560" height="300" loading="lazy" alt="稿纸上手写的中文作文开头与修改痕迹">
+            <div class="cb">
+              <h3>中学生议论文写作邀请赛</h3>
+              <p>命题四选一，2000 字以内，AI 检测重复率超 25% 取消评奖资格，评审三轮匿名。</p>
+              <div class="meta"><span class="pill">报名至 11-25</span><span>线上提交</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/contest-physics/560/300" width="560" height="300" loading="lazy" alt="物理实验桌上摆放弹簧测力计与小车轨道">
+            <div class="cb">
+              <h3>物理联赛复赛实验题冲刺</h3>
+              <p>复赛实验占 40 分，近三年考的都是测量与误差分析，误差公式写错直接扣 6 分。</p>
+              <div class="meta"><span class="pill ok">11-12 打证</span><span>线下统考</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="latest" aria-labelledby="ltTitle">
+        <div class="sec-head">
+          <h2 id="ltTitle">最新更新与时间表</h2>
+          <span class="hint">截至 11-08 18:00</span>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span class="d">11月8日 · 今天</span>
+            <p>信息学奥赛初赛成绩在省级赛区官网开放查询，CSP-J 入门级合格线 62 分，CSP-S 提高级 58 分，较去年各降 3 分与 5 分。</p>
+          </li>
+          <li>
+            <span class="d">11月7日 · 昨天</span>
+            <p>中国大学生计算机设计大赛发布 2027 版作品规范，软件应用类新增"可离线运行"要求，评审时断网演示，依赖云端接口的作品需自备本地方案。</p>
+          </li>
+          <li>
+            <span class="d">11月6日</span>
+            <p>青少年机器人等级考试公布冬季场次考点，共 23 个城市，新增合肥与太原；实操考试用器材由考点统一提供，选手只带身份证与准考码。</p>
+          </li>
+          <li>
+            <span class="d">11月5日</span>
+            <p>数学联赛省级赛区调整考场规则：开考 30 分钟后禁止入场，原规定为 15 分钟；答题卡涂改需监考签字，自行修改按违规处理。</p>
+          </li>
+          <li>
+            <span class="d">11月2日</span>
+            <p>英语演讲赛区公布初赛话题，8 个话题里有 5 个涉及科技伦理，往年的"我的家乡"类题目只剩一个。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="panel" id="channels" aria-labelledby="chTitle">
+        <div class="sec-head">
+          <h2 id="chTitle">按学科选报名入口</h2>
+          <span class="hint">9 个频道</span>
+        </div>
+        <div class="grid-cats">
+          <a class="cat" href="#featured"><strong>信息学奥赛报名入口</strong><span>CSP-J/S 与省选 · 4 场在招</span></a>
+          <a class="cat" href="#featured"><strong>数学联赛省级赛区</strong><span>预赛已过 · 复赛 11-22</span></a>
+          <a class="cat" href="#featured"><strong>物理竞赛复赛</strong><span>准考证 11-12 截止</span></a>
+          <a class="cat" href="#featured"><strong>化学奥林匹克初赛</strong><span>实验题权重上调</span></a>
+          <a class="cat" href="#featured"><strong>青少年机器人竞赛入口</strong><span>循迹 · 相扑 · 创意</span></a>
+          <a class="cat" href="#featured"><strong>计算机设计大赛</strong><span>校内选拔 11-10 关闭</span></a>
+          <a class="cat" href="#featured"><strong>作文与议论文写作赛</strong><span>AI 检测口径更新</span></a>
+          <a class="cat" href="#featured"><strong>英语演讲比赛报名</strong><span>话题 8 选 1</span></a>
+          <a class="cat" href="#featured"><strong>青少年科技创新大赛</strong><span>项目申报 12-01 起</span></a>
+        </div>
+      </section>
+
+      <section class="panel deep" id="deep" aria-labelledby="dpTitle">
+        <div class="sec-head">
+          <h2 id="dpTitle">深度解析：同一天报两场赛，时间账要怎么算</h2>
+          <span class="hint">含可核对时间线与规则对比</span>
+        </div>
+        <p>11月14日是个典型冲突日：上午 9:00 物理联赛复赛开考，时长 3 小时；同一晚 19:00 蓝桥杯青少年组初赛线上开赛，2 小时。中间相隔 7 小时，表面不冲突，但物理复赛的考点在郊区的市实验中学，从考点回到有稳定网络的环境，按该校往届家长记录平均要 1 小时 40 分钟，还要留出设备调试时间。这不是"能不能赶"的问题，而是"赶过去还剩多少有效准备"的问题。</p>
+
+        <h3>11月14日的时间账：可核对的五个节点</h3>
+        <ul class="factcheck">
+          <li><b>08:30</b><span class="ft">物理复赛入场截止，需刷身份证与准考码，迟到不补</span></li>
+          <li><b>12:00</b><span class="ft">物理复赛结束，试卷与答题卡清点后统一放行</span></li>
+          <li><b>13:40</b><span class="fr">按考点至最近地铁站 2.3 公里、换乘两次估算的到家时间</span></li>
+          <li><b>19:00</b><span class="ft">蓝桥杯初赛系统开放，登录后 10 分钟内必须开始作答</span></li>
+          <li><b>21:00</b><span class="ft">提交关闭，系统在 20:55 后不再接受重新上传</span></li>
+        </ul>
+        <p>把上面的节点排开，13:40 到家到 19:00 开赛之间有 5 小时 20 分钟。这段时间吃饭、休息两小时，剩三小时做题，对入门级够用，对提高级偏紧。2025 年同赛事的提高级初赛平均完赛时间 97 分钟，意味着留给调试的余量只有 20 分钟左右。</p>
+
+        <h3>两种做法，代价不同</h3>
+        <div class="compare">
+          <div class="cmp">
+            <h4>做法一：两场都报</h4>
+            <p>满足报名资格的前提下，成本是当天 12 小时在外或对着屏幕，风险是物理实验题没时间复盘、初赛调试超时。适合已经拿到省一、物理复赛分数只求过线的人。</p>
+          </div>
+          <div class="cmp b">
+            <h4>做法二：只报一场</h4>
+            <p>物理复赛一年一次，初赛每年三轮，从机会成本看应优先复赛。代价是初赛要等 2027 年 3 月场次，报名名额在部分省份需要重新排队。</p>
+          </div>
+        </div>
+
+        <h3>规则差异：改考与退费</h3>
+        <p>物理联赛省级赛区在 2026 年 10 月修订的考场规则里明确，报名确认后不设退费通道，缺考记入赛区诚信记录但不影响次年报名。蓝桥杯青少年组则允许在开赛前 48 小时申请改期一次，改期后原场次名额作废。两条规则的方向不同：前者把考试当作稀缺资源，后者把报名当作可调度名额。判断能不能"两头占"，得看报的到底是哪一类。</p>
+
+        <div class="quote">
+          "复赛准考证 11 月 12 日中午就打不出来了，临时想改主意都改不了。"
+          <cite>—— 某省级赛区领队在 11-07 教师群里的话，转述自学校带队老师</cite>
+        </div>
+
+        <h3>赛务方的说法与家长的理解</h3>
+        <p>赛区办公室在 11-03 的书面回应中称，考场 17:00 前会清场完毕，不存在"锁门到深夜"的情况，网上的说法与事实不符。而部分家长转述的是"孩子 17:30 才出校门"，两者差异出在校门放行与考场清场的区别上，属于转述误差。至于"复赛要加考实验操作"的传闻，截至 11-08 未见任何赛区公告，按推测处理，不作为报名依据。</p>
+        <p>更值得核对的是成绩使用口径。2026 年省内三所高校综合评价简章里，物理联赛省一的可折算分是 8—12 分不等，同一奖项在不同学校差距达 4 分。这意味着"拿省一"本身不是终点，选校时才决定它的实际价值。</p>
+      </section>
+
+      <section class="panel" id="guide" aria-labelledby="gdTitle">
+        <div class="sec-head">
+          <h2 id="gdTitle">报名与参赛体验指南</h2>
+          <span class="hint">六步走完一场赛</span>
+        </div>
+        <ol class="steps">
+          <li><b>确认资格条款。</b>先看年级、学籍与获奖门槛三项，机器人等级考试四级以上要上一级证书编号，多数人卡在这一步。</li>
+          <li><b>核对时间。</b>把开赛时间、检录截止、提交关闸三个时间点抄进日历，复赛类只看检录截止，线上赛只看提交关闸。</li>
+          <li><b>准备材料。</b>证件照常见要求是白底、宽 295 像素、小于 200KB，物理联赛准考证还需学校盖章的报名表扫描件。</li>
+          <li><b>走对入口。</b>信息学奥赛走省级赛区报名系统，计算机设计大赛走校内选拔后台，不互通，账号要分别注册。</li>
+          <li><b>留痕。</b>提交后截图报名编号与时间戳，遇系统异常时这是唯一能被赛务方核对的凭据。</li>
+          <li><b>考前三天再查一次。</b>考点、场次、设备要求都可能变动，机器人赛的器材清单在 11-06 就改过一次。</li>
+        </ol>
+        <p>体验上的差异也很具体：线下联赛候场区通常没有充电位，带纸质资料比带平板实用；线上赛的建议是准备第二台设备做热点，2026 年秋季两场初赛都出现过区域性断网，主办方按提交时间顺延了 15 分钟。</p>
+      </section>
+
+      <section class="panel" id="faq" aria-labelledby="fqTitle">
+        <div class="sec-head">
+          <h2 id="fqTitle">报名常见问题</h2>
+          <span class="hint">4 个高频疑问</span>
+        </div>
+        <details>
+          <summary>报名具体在哪个系统提交？</summary>
+          <div class="fa">以主办方官网为准。信息学奥赛在省级赛区报名系统注册，数学联赛通过学校统一提交名单，计算机设计大赛先过校内选拔后台。第三方汇总页只做跳转指引，不代收材料。</div>
+        </details>
+        <details>
+          <summary>同一天报三场竞赛会冲突吗？</summary>
+          <div class="fa">看场次时段。线上编程赛多在 19:00—21:00，线下学科联赛上午 9:00 开考。2026 年 11 月 14 日同时有蓝桥杯初赛与物理联赛复赛，二者间隔不足两小时有效准备时间，建议只报一场。</div>
+        </details>
+        <details>
+          <summary>报名信息填错能改吗？</summary>
+          <div class="fa">多数平台在截止前允许自助修改，姓名、证件号这类关键字段需联系赛务邮箱。信息学奥赛报名系统自 11-05 起关闭自助改名入口，改名须走学校管理员通道，处理后 T+1 生效。</div>
+        </details>
+        <details>
+          <summary>竞赛证书对升学有多少参考价值？</summary>
+          <div class="fa">省级以上学科竞赛奖项在综合评价招生中有折算空间，具体看目标高校当年简章，同一奖项在不同学校差 4 分左右。白名单赛事名单每年发布，2026 年名单比 2025 年删减了 3 项语言类比赛。</div>
+        </details>
+      </section>
+
+      <section class="panel" id="comments" aria-labelledby="cmTitle">
+        <div class="sec-head">
+          <h2 id="cmTitle">参赛者与家长评论</h2>
+          <span class="hint">来自赛区交流群与留言</span>
+        </div>
+        <div class="comments">
+          <div class="cmt">
+            <div class="who"><span class="av">周</span>周口 · 高二家长 · 11-07</div>
+            <p>物理复赛准考证打印要学校盖章的报名表，班级群里 11-06 才通知，跑了三趟教务处。</p>
+            <span class="ref">指向：物理竞赛复赛准考证流程</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">林</span>杭州 · 信息学选手 · 11-08</div>
+            <p>入门级 62 分合格线比去年低 3 分，题面确实难了一档，第三题的图论建模按往年难度至少是提高级水平。</p>
+            <span class="ref">指向：信息学奥赛 CSP-J 合格线</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">徐</span>成都 · 机器人教练 · 11-06</div>
+            <p>器材统一提供这条改得好，之前各队自带电机，25 厘米尺寸限制根本没意义，实测有队伍装到 28 厘米。</p>
+            <span class="ref">指向：青少年机器人等级考试规则</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">杜</span>长沙 · 大一学生 · 11-05</div>
+            <p>计算机设计大赛要求离线运行，我们的作品依赖云端语音接口，改本地模型要多两周，校内选拔 11-10 就截止了，来不及。</p>
+            <span class="ref">指向：计算机设计大赛 2027 版规范</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">柯</span>郑州 · 初三学生 · 11-04</div>
+            <p>议论文比赛说 AI 检测超 25% 取消资格，但没公布用哪个检测工具，心里没底。同班有人用润色软件改过，也不知道算不算。</p>
+            <span class="ref">指向：中学生议论文写作邀请赛</span>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">邵</span>青岛 · 英语老师 · 11-03</div>
+            <p>演讲话题里五个涉及科技伦理，学生选题扎堆写人脸识别，预赛现场表现同质化严重。内容本身没问题，是准备方式都差不多。</p>
+            <span class="ref">指向：英语演讲比赛初赛话题</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="news" aria-labelledby="nwTitle">
+        <div class="sec-head">
+          <h2 id="nwTitle">相关资讯</h2>
+        </div>
+        <div class="news">
+          <article>
+            <h3>物理联赛复赛考场规则 10 月修订</h3>
+            <p>入场截止从开考后 15 分钟改为 30 分钟，答题卡涂改需监考签字。修订稿由三个省级赛区先后发布，措辞基本一致。</p>
+          </article>
+          <article>
+            <h3>信息学奥赛省级赛区成绩复核通道开放</h3>
+            <p>复核只查登分与漏评，不重新评卷。申请 11-09 截止，由学校管理员统一提交，个人邮箱不接收。</p>
+          </article>
+          <article>
+            <h3>机器人等级考试新增两个考点</h3>
+            <p>合肥与太原入列冬季场次考点，全国考点数为 23 个。实操器材由考点提供，选手携带身份证与准考码入场。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="board" aria-labelledby="bdTitle">
+        <div class="sec-head">
+          <h2 id="bdTitle">本周报名热度榜</h2>
+          <span class="hint">按报名系统点击数，示例数据</span>
+        </div>
+        <ol class="rank">
+          <li><span>信息学奥赛冬令营选拔</span><span class="sc">4,820 次</span></li>
+          <li><span>青少年机器人循迹挑战赛</span><span class="sc">3,915 次</span></li>
+          <li><span>计算机设计大赛校内选拔</span><span class="sc">3,260 次</span></li>
+          <li><span>中学生议论文写作邀请赛</span><span class="sc">2,744 次</span></li>
+          <li><span>英语演讲比赛初赛</span><span class="sc">2,183 次</span></li>
+        </ol>
+      </section>
+
+      <section class="panel" id="related" aria-labelledby="rlTitle">
+        <div class="sec-head">
+          <h2 id="rlTitle">相关推荐标签</h2>
+        </div>
+        <div class="tags">
+          <a class="tag" href="#featured">信息学奥赛报名入口</a>
+          <a class="tag" href="#featured">物理竞赛复赛准考证</a>
+          <a class="tag" href="#featured">青少年机器人等级考试</a>
+          <a class="tag" href="#featured">计算机设计大赛校内选拔</a>
+          <a class="tag" href="#faq">竞赛白名单查询</a>
+          <a class="tag" href="#guide">参赛材料清单</a>
+          <a class="tag" href="#deep">11月14日赛事冲突</a>
+          <a class="tag" href="#latest">省级赛区成绩查询</a>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="side" aria-label="侧栏导航">
+      <div class="panel">
+        <h2>栏目导航</h2>
+        <ul id="sideNav">
+          <li><a href="#overview">赛事概览</a></li>
+          <li><a href="#featured">精选赛事推荐</a></li>
+          <li><a href="#latest">最新更新与时间表</a></li>
+          <li><a href="#channels">按学科选入口</a></li>
+          <li><a href="#deep">深度解析</a></li>
+          <li><a href="#guide">体验指南</a></li>
+          <li><a href="#faq">报名常见问题</a></li>
+          <li><a href="#comments">参赛评论</a></li>
+          <li><a href="#news">相关资讯</a></li>
+          <li><a href="#board">报名热度榜</a></li>
+          <li><a href="#related">推荐标签</a></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>近期节点</h2>
+        <ul>
+          <li><a href="#latest">11-09 成绩复核截止</a></li>
+          <li><a href="#latest">11-10 校内选拔关闭</a></li>
+          <li><a href="#latest">11-12 准考证打印截止</a></li>
+          <li><a href="#latest">11-14 复赛与初赛同日</a></li>
+          <li><a href="#latest">11-15 机器人报名截止</a></li>
+        </ul>
+        <p class="note">页面所列为示例条目，报名时间与规则以各主办方官网当日公告为准。</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<button id="toTop" type="button" aria-label="回到顶部">回顶</button>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2b4d92"/><path d="M18 42l9-17 9 17" stroke="#ffd166" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="45" cy="20" r="6" fill="#e8552f"/></svg>
+          <strong>每天竞赛</strong>
+        </div>
+        <p class="fpos">按日程挑选赛事、核对资格条款、走对报名系统，一页看清当天与本周的关键节点。</p>
+      </div>
+      <div>
+        <h3>学科频道</h3>
+        <ul>
+          <li><a href="#featured">信息学与算法</a></li>
+          <li><a href="#featured">数学与物理</a></li>
+          <li><a href="#featured">化学与生物</a></li>
+          <li><a href="#featured">机器人技术</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>参赛工具</h3>
+        <ul>
+          <li><a href="#guide">材料清单</a></li>
+          <li><a href="#deep">时间冲突计算</a></li>
+          <li><a href="#faq">报名规则问答</a></li>
+          <li><a href="#related">白名单查询</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>栏目</h3>
+        <ul>
+          <li><a href="#latest">更新时间表</a></li>
+          <li><a href="#comments">参赛评论</a></li>
+          <li><a href="#news">相关资讯</a></li>
+          <li><a href="#board">报名热度榜</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>示例数据说明：赛事名称、分数线、报名规模为演示用示例条目，实际以主办方公告为准。</span>
+      <span>内容更新：2026-11-08（对应时间表中的成绩复核与准考证节点）</span>
+      <span>© 2026 每天竞赛 内容整理</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=760){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var q=document.getElementById('q');
+  var qBtn=document.getElementById('qBtn');
+  var msg=document.getElementById('searchMsg');
+  var hasResult=false;
+
+  function runSearch(){
+    var kw=(q.value||'').trim();
+    document.querySelectorAll('mark[data-hit]').forEach(function(m){
+      var t=document.createTextNode(m.textContent);
+      m.parentNode.replaceChild(t,m);
+    });
+    if(!kw){
+      msg.classList.remove('show');msg.textContent='';
+      return;
+    }
+    var scope=document.querySelectorAll('.panel, .hero');
+    var found=null;
+    scope.forEach(function(el){
+      if(!found && el.textContent.indexOf(kw)>-1){found=el;}
+    });
+    if(found){
+      msg.classList.add('show');
+      msg.textContent='找到包含“'+kw+'”的内容，已为你定位到对应栏目。';
+      var id=found.id||found.querySelector('[id]')&&found.querySelector('[id]').id;
+      if(id){var t=document.getElementById(id);if(t){t.scrollIntoView({behavior:'smooth',block:'start'});}}
+    }else{
+      msg.classList.add('show');
+      msg.textContent='没有找到与“'+kw+'”相关的赛事或学科，换个词试试：信息学、复赛、机器人、写作。';
+    }
+  }
+  if(qBtn){qBtn.addEventListener('click',runSearch);}
+  if(q){q.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();runSearch();}});}
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>600){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var links=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(l){l.classList.remove('on');});
+          var i=sections.indexOf(en.target);
+          if(i>-1){links[i].classList.add('on');}
+        }
+      });
+    },{rootMargin:'-140px 0px -60% 0px',threshold:0});
+    sections.forEach(function(s){if(s){io.observe(s);}});
+  }
+})();
+</script>
+</body>
+</html>
